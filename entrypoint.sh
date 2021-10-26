@@ -7,6 +7,24 @@ java -version ## only really needed to show what version is being used. Should b
 # Replace Startup Variables
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
 echo ":/home/container$ ${MODIFIED_STARTUP}"
+echo "
 
+
+
+\e[1m████████╗░█████╗░██╗░██████╗░░█████╗░███╗░░██╗░█████╗░██████╗░███████╗░██████╗
+\e[1m╚══██╔══╝██╔══██╗██║██╔════╝░██╔══██╗████╗░██║██╔══██╗██╔══██╗██╔════╝██╔════╝
+\e[1m░░░██║░░░███████║██║██║░░██╗░██║░░██║██╔██╗██║██║░░██║██║░░██║█████╗░░╚█████╗░
+\e[1m░░░██║░░░██╔══██║██║██║░░╚██╗██║░░██║██║╚████║██║░░██║██║░░██║██╔══╝░░░╚═══██╗
+\e[1m░░░██║░░░██║░░██║██║╚██████╔╝╚█████╔╝██║░╚███║╚█████╔╝██████╔╝███████╗██████╔╝
+\e[1m░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚═════╝░░╚════╝░╚═╝░░╚══╝░╚════╝░╚═════╝░╚══════╝╚═════╝░
+
+                           \e[91mPowered by TAIGO.xyz
+
+
+
+Site: https://nodes.taigocraft.ru/
+Panel: https://panel.taigocraft.ru/
+Client: https://client.taigocraft.ru/
+"
 # Run the Server
 ${MODIFIED_STARTUP}
