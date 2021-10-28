@@ -4,12 +4,12 @@ LABEL       author="TaigoNodes" maintainer="support@taigocraft.ru"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 \
- && useradd -d /home/container -m container
+ && useradd -d / -m container
  
 USER        container
-ENV         USER=container HOME=/home/container
+ENV         USER=container HOME=/
 
-WORKDIR     /home/container
+WORKDIR     /
 
 COPY        ./entrypoint.sh /entrypoint.sh
 
